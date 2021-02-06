@@ -1,0 +1,242 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+// Пользовательские стили
+.scrollTop
+  z-index: 20
+  position: fixed
+  color: #fff
+  background: #555
+  border-radius: 50%
+  opacity: .7
+  bottom: 1em
+  right: 1em
+  padding: 13px 0
+  width: 50px
+  height: 50px
+  text-align: center
+  margin-bottom: 13px
+  font-family: monospace
+  font-size: 13px
+  text-decoration: none
+  cursor: pointer
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  transition: .5s
+  &:hover
+    background: #333
+    opacity: .95
+    transition: .5s
+    box-shadow: 0 0 5px rgba(0,0,0,0.5)
+
+
+//  navbar
+.navbar
+  position: fixed
+  top: 0
+  z-index: 10000
+  width: 100%
+  line-height: 2
+  background: rgba(0,0,0,0)
+  transition: all 1s ease-out
+  .navigation
+    grid-template-columns: 2fr 8fr 2fr 1fr
+    margin: 0 auto
+    max-width: 1500px
+    .logo
+      color: white
+      padding: 1rem
+      margin-left: 20px
+      align-content: center
+      font-size: 35px
+      font-family: sans-serif
+      transition: font-size 1s ease-out
+      border-radius: 25px
+      .logo-a
+        //background-color: white
+        //color: black
+        padding: 0 1rem .2rem
+        border: white 2px solid
+      .logo-15
+        background-color: white
+        color: black
+        padding: 0 .6rem .2rem .4rem
+        border: white 2px solid
+    .menu
+      padding: 1.5rem 0
+      text-align: right
+      align-content: center
+      a
+        margin: 0 1rem
+        font-weight: 700
+        color: white
+        text-decoration: none
+        font-size: 25px
+        transition: font-size 1s ease-out
+        &:hover
+          color: #f7a26c
+        &:active
+          color: #f7a26c
+    .lang-menu
+      align-items: center
+      text-align: right
+      margin: 1.1rem
+      padding: 1rem
+      transition: all 1s ease-out
+
+      .lang_label
+        color: white
+        font-weight: 700
+
+.navbar-onscroll
+  background: rgba(0,0,0,.9)
+  position: fixed
+  top: 0
+  z-index: 10000
+  width: 100%
+  line-height: 2
+  transition: all 1s ease-out
+  .navigation
+    grid-template-columns: 2fr 8fr 2fr 1fr
+    margin: 0 auto
+    max-width: 1500px
+    .logo
+      color: white
+      padding: .3rem
+      margin-left: 20px
+      align-content: center
+      font-size: 30px
+      font-family: sans-serif
+      transition: font-size 1s ease-out
+      .logo-a
+        padding: 0 1rem .2rem
+        border: white 2px solid
+      .logo-15
+        background-color: white
+        color: black
+        padding: 0 .6rem .2rem .4rem
+        border: white 2px solid
+    .menu
+      padding: 1rem 0
+      text-align: right
+      align-content: center
+      a
+        margin: 0 1rem
+        font-weight: 700
+        color: white
+        text-decoration: none
+        font-size: 20px
+        transition: font-size 1s ease-out
+        &:hover
+          color: #f7a26c
+        &:active
+          color: #f7a26c
+    .lang-menu
+      align-items: center
+      text-align: right
+      margin: 1.1rem
+      transition: all 1s ease-out
+      .lang_label
+        color: white
+        font-weight: 700
+
+
+//header
+.main-header
+  position: relative
+  top: 0
+  background-image: url("../img/many-cameras.webp"), url("../img/many-cameras.jpg")
+  overflow: hidden
+  background-position: center top
+  -webkit-background-size: cover
+  background-size: cover
+  background-repeat: no-repeat
+  -o-background-size: cover
+  -moz-background-size: cover
+  min-height: 100vh
+  color: white
+  z-index: 1
+  justify-content: center
+  &::before
+    z-index: -1
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: black
+    opacity: .5
+  .header-content
+    top: 40%
+    left: 20%
+    text-align: center
+    margin-top: 350px
+    transform: translate(0, -50%)
+    h1
+      margin: 0
+      font-size: 4rem
+      line-height: 1
+      text-align: left
+    p
+      margin: 11rem 0 3rem 0
+      padding: 0
+      text-align: center
+    .header-h1
+      margin: 20% auto 0
+      font-size: 4rem
+      text-align: center
+      line-height: 1
+      font-weight: 700
+    .header-text
+      grid-column: 1/2
+      grid-row: 3/4
+      margin: 1rem 0 4rem
+
+.about
+  position: relative
+  background-image: url("../img/about-pic.jpg")
+  overflow: hidden
+  background-position: center top
+  -webkit-background-size: cover
+  background-size: cover
+  background-repeat: no-repeat
+  -o-background-size: cover
+  -moz-background-size: cover
+  min-height: 100vh
+  color: white
+  z-index: 1
+  justify-content: center
+  &::before
+    z-index: -1
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: white
+    opacity: .8
+  .container
+    h2
+      color: #f7a26c
+      margin-top: 20vh
+      border-width: 5px
+      font-size: 50px
+    p
+      color: rgba(80,80,80,1)
+      font-size: 20px
+      font-weight: 600
+      text-align: justify
+      padding: 50px
+
+.team
+  background-color: rgba(0,0,0,.5)
+  .container
+
+@import "media" // Всегда в конце
