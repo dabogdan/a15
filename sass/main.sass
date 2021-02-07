@@ -336,7 +336,7 @@
   font-family: sans-serif
   background-color: rgba(0,0,0,1)
   color: white
-  height: 450px
+  height: 550px
   background-image: url(../img/sky.jpg)
   -webkit-background-size: cover
   background-size: cover
@@ -344,16 +344,18 @@
   opacity: .9
   .container
     padding: 2rem 0 0
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr
     grid-gap: 10px
     .contacts__title
       padding: 2rem 0 1rem
-      grid-column: 1/3
+      grid-column: 1/4
     .contatcs__text
-      padding: 1rem 4rem
+      padding: 1rem 2rem
       text-align: justify
+      p
+        font-size: 14px
     .contacts__icons
-      padding: 1rem 4rem
+      padding: 1rem 1rem
       grid-template-columns: 1fr 5rem 5rem 1fr
       grid-gap: 1rem
       .mail
@@ -373,7 +375,8 @@
         grid-column: 3/4
           height: 4rem
     .footer-rights
-      grid-column: 1/3
+      margin: 2.5rem 0
+      grid-column: 1/4
 
 
 
