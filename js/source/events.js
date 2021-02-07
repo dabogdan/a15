@@ -21,7 +21,6 @@ telegaContacts.addEventListener('mouseout', () => {
     telegaContacts.setAttribute('src', 'img/Telegram-white.svg');
 })
 
-
 for (let i = 0; i < face.length; i++) {
     face[i].addEventListener('mouseover', () => {
         face[i].setAttribute('src', 'img/Facebook-orange.svg')
