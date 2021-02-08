@@ -4,6 +4,7 @@ let linkedin = document.getElementsByClassName('team__social-in');
 let unba = document.getElementsByClassName('team__social-unba');
 let twContacts = document.querySelector('.contacts__social-tw-icon');
 let telegaContacts = document.querySelector('.contacts__social-tele-icon');
+let mailContacts = document.querySelector('.contacts__social-mail');
 
 twContacts.addEventListener('mouseover', () => {
     twContacts.setAttribute('src', 'img/Twitter-orange.svg');
@@ -20,6 +21,15 @@ telegaContacts.addEventListener('mouseover', () => {
 telegaContacts.addEventListener('mouseout', () => {
     telegaContacts.setAttribute('src', 'img/Telegram-white.svg');
 })
+
+mailContacts.addEventListener('mouseover', () => {
+    mailContacts.setAttribute('src', 'img/mail-orange.svg');
+})
+
+mailContacts.addEventListener('mouseout', () => {
+    mailContacts.setAttribute('src', 'img/mail.svg');
+})
+
 
 for (let i = 0; i < face.length; i++) {
     face[i].addEventListener('mouseover', () => {

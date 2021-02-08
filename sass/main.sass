@@ -161,7 +161,7 @@
 .main-header
   position: relative
   top: 0
-  background-image: url("../img/freedom-of-cpeech.jpg")
+  background-image: url("../img/druker.jpg")
   overflow: hidden
   background-position: center top
   -webkit-background-size: cover
@@ -199,7 +199,7 @@
       padding: 0
       text-align: center
     .header-h1
-      margin: 20% auto 0
+      margin: 18% auto 5%
       font-size: 4rem
       text-align: center
       line-height: 1
@@ -207,11 +207,14 @@
     .header-text
       grid-column: 1/2
       grid-row: 3/4
-      margin: 1rem 0 4rem
+      margin: 1rem 0 6rem
+    .orange-button
+      margin-top: 60px
+
 
 .about
   position: relative
-  background-image: url("../img/Lapin4.JPG")
+  background-image: url("../img/nout.JPG")
   overflow: hidden
   background-position: center top
   -webkit-background-size: cover
@@ -231,19 +234,19 @@
     right: 0
     bottom: 0
     left: 0
-    background-color: white
-    opacity: .8
+    background-color: slategray
+    opacity: .7
   .container
     h2
       color: #f7a26c
-      margin-top: 15vh
+      margin-top: 10vh
       border-width: 5px
       font-size: 50px
     p
-      color: rgba(80,80,80,1)
+      color: white
       font-size: 20px
       font-weight: 600
-      text-align: justify
+      text-align: left
       padding: 1.3rem 3rem
 
 .team
@@ -336,7 +339,7 @@
   font-family: sans-serif
   background-color: rgba(0,0,0,1)
   color: white
-  height: 550px
+  height: 450px
   background-image: url(../img/sky.jpg)
   -webkit-background-size: cover
   background-size: cover
@@ -351,31 +354,33 @@
       grid-column: 1/4
     .contatcs__text
       padding: 1rem 2rem
-      text-align: justify
+      text-align: left
+      h4
+        color: #f7a26c
       p
         font-size: 14px
     .contacts__icons
-      padding: 1rem 1rem
-      grid-template-columns: 1fr 5rem 5rem 1fr
-      grid-gap: 1rem
+      padding: 1rem 0
+      grid-template-columns: repeat(3, 3rem)
+      grid-gap: 2rem
       .mail
-        grid-column: 1/5
         font-size: 1.4rem
-        a
-          text-decoration: none
-          color: white
-          &:hover
-            color: #f7a26c
+      a
+        text-decoration: none
+        color: white
+        &:hover
+          color: #f7a26c
+        img
+          width: 4.3rem
       .social-item
         width: 4rem
       .contacts__social-tw
-        grid-column: 2/3
         height: 4rem
       .contacts__social-tele
-        grid-column: 3/4
+        //grid-column: 3/4
           height: 4rem
     .footer-rights
-      margin: 0
+      margin: 2rem 0 0
       grid-column: 1/4
 
 
