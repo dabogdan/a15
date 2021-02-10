@@ -184,26 +184,26 @@
     background-color: black
     opacity: .5
   .header-content
-    top: 40%
     left: 20%
     text-align: center
-    margin-top: 350px
+    margin-top: 25rem
     transform: translate(0, -50%)
-    h1
-      margin: 0
-      font-size: 4rem
-      line-height: 1
-      text-align: left
-    p
-      margin: 11rem 0 3rem 0
-      padding: 0
-      text-align: center
     .header-h1
       margin: 18% auto 5%
       font-size: 4rem
       text-align: center
       line-height: 1
       font-weight: 700
+      //font-family: 'Oxygen Mono', monospace
+    .blinking-cursor
+      font-weight: 100
+      font-size: 4rem
+      color: white
+      -webkit-animation: 1s blink step-end infinite
+      -moz-animation: 1s blink step-end infinite
+      -ms-animation: 1s blink step-end infinite
+      -o-animation: 1s blink step-end infinite
+      animation: 1s blink step-end infinite
     .header-text
       grid-column: 1/2
       grid-row: 3/4
@@ -279,6 +279,7 @@
     .team__description
       grid-auto-rows: min-content
       text-align: left
+      margin: auto 0
       padding: 0 20px
       h3
         margin: 0 0 10px
@@ -383,13 +384,11 @@
       margin: 2rem 0 0
       grid-column: 1/4
 
-
-
-//.lower-footer
-//  height: 50px
-//  font-family: sans-serif
-//  background-color: rgba(50,50,50,1)
-//  color: white
+@keyframes blink
+  from, to
+    color: transparent
+  50%
+    color: white
 
 
 @import "media" // Всегда в конце
