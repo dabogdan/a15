@@ -82,7 +82,6 @@ for (let i = 0; i < more.length; i++) {
 //typing animation
 let speed = 75;
 let h1 = document.querySelector('.header-h1');
-// let p = document.querySelector('p');
 let delay = h1.innerHTML.length * speed + speed;
 
 function typeEffect(element, speed) {
