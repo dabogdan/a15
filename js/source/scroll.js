@@ -7,7 +7,7 @@ let navbar = document.getElementById('navbar');
 console.log(navbar);
 
 function scrollUpButtonAppear() {
-    if(window.scrollY > 100) {
+    if(window.scrollY > 50) {
         toTop.style.display = 'block';
         navbar.className = 'navbar-onscroll'
     } else {
