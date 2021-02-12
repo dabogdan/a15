@@ -42,9 +42,12 @@ function scrollUp() {
 const nav = document.querySelector('.navbar');
 
 // --------------------- INITIALIZE CHRIS FERDINANDI'S SMOOTH SCROLL VANILLA JS LIBRARY --------------------- //
-const scroll = new SmoothScroll('a[href*="#"]', {offset: nav.offsetHeight - 20});
-
-
+if (screen.width > 480) {
+    const scroll = new SmoothScroll('a[href*="#"]', {offset: nav.offsetHeight - 20});
+}
+if (screen.width <= 480) {
+    const scroll = new SmoothScroll('a[href*="#"]', {offset: nav.offsetHeight-80});
+}
 
 
 
