@@ -88,7 +88,7 @@
     .header-content
       margin-top: 100px
       .header-h1
-        font-size: 1.8rem
+        font-size: 1.6rem
   .about
     .container
       p
@@ -129,17 +129,26 @@
       .lang-menu
         grid-column: 2/3
         text-align: center
+      .hamburger-menu
+        display: block
 
   .navbar-onscroll
     top: auto
     bottom: 0
     padding-bottom: 1rem
     .navigation
+      .logo
+        padding-top: 1rem
       .menu
         display: none
       .lang-menu
         grid-column: 2/3
         text-align: center
+        padding: .3rem 0 0 0
+  .main-header
+    .header-content
+      .header-h1
+        font-size: 1.2rem
 
   .about
     .container
@@ -150,7 +159,10 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	/**/
+  .main-header
+    .header-content
+      .header-h1
+        font-size: 1.1rem
 
 
 /*==========  Mobile First  ==========*/

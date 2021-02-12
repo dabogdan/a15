@@ -4,16 +4,26 @@ window.onscroll = scrollUpButtonAppear;
 
 let toTop = document.getElementById('scrollTop');
 let navbar = document.getElementById('navbar');
-console.log(navbar);
 
 function scrollUpButtonAppear() {
-    if(window.scrollY > 50) {
-        toTop.style.display = 'block';
-        navbar.className = 'navbar-onscroll'
+    if (screen.width > 480) {
+        if (window.scrollY > 100) {
+            toTop.style.display = 'block';
+            navbar.className = 'navbar-onscroll'
+        } else {
+            toTop.style.display = 'none';
+            navbar.className = 'navbar'
+        }
     } else {
-        toTop.style.display = 'none';
-        navbar.className = 'navbar'
+        navbar.className = 'navbar-onscroll'
+        navbar.style.opacity = '0.8';
+        if (window.scrollY > 10) {
+            toTop.style.display = 'block';
+        } else {
+            toTop.style.display = 'none';
+        }
     }
+
 }
 
 function scrollUp() {
@@ -32,7 +42,7 @@ function scrollUp() {
 const nav = document.querySelector('.navbar');
 
 // --------------------- INITIALIZE CHRIS FERDINANDI'S SMOOTH SCROLL VANILLA JS LIBRARY --------------------- //
-const scroll = new SmoothScroll('a[href*="#"]', {offset: nav.offsetHeight-20});
+const scroll = new SmoothScroll('a[href*="#"]', {offset: nav.offsetHeight - 20});
 
 
 

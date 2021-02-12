@@ -5,6 +5,10 @@ let unba = document.getElementsByClassName('team__social-unba');
 let twContacts = document.querySelector('.contacts__social-tw-icon');
 let telegaContacts = document.querySelector('.contacts__social-tele-icon');
 let mailContacts = document.querySelector('.contacts__social-mail');
+let menuBox = document.querySelector('.menu__box');
+let menuToggle = document.querySelector('#menu__toggle');
+
+
 
 twContacts.addEventListener('mouseover', () => {
     twContacts.setAttribute('src', 'img/Twitter-orange.svg');
@@ -30,6 +34,9 @@ mailContacts.addEventListener('mouseout', () => {
     mailContacts.setAttribute('src', 'img/mail.svg');
 })
 
+menuBox.addEventListener('click', () => {
+    menuToggle.checked = '';
+})
 
 for (let i = 0; i < face.length; i++) {
     face[i].addEventListener('mouseover', () => {
